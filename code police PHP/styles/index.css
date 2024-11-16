@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(blue, yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h2 {
+    color: midnightblue;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    background: yellow;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: white;
+    background-color: blue;
+}
+
+#content {
+    margin-top: 20px;
+    max-width: 900px;
+    max-height: 900px;
+    overflow: scroll;
+    width: 100%;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 16px;
+    gap: 30px;
+    padding: 40px;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: midnightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+table {
+    width: 90%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid midnightblue;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: midnightblue;
+    color: white;
+}
